@@ -19,13 +19,13 @@ listener = MineListener()
 stream = tweepy.Stream(auth = api.auth, listener = listener)
 
 #Get stream running
-stream.filter(track = ['Trump','Hillary','Clinton'])
+stream.filter(track = ["Marc Andreessen"])
 
 #For testing purposes; limits count of tweets to 10
 while (len(MineListener.tweets) < 10):
 	time.sleep(5)
 
-#Prints out all gathered twitter data 
+#Prints out all gathered twitter data
 for tweet in MineListener.tweets:
 	tweet.printData()
 	print ''

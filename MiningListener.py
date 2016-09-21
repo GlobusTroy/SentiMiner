@@ -13,12 +13,12 @@ class MineListener(tweepy.StreamListener):
 		text = status.text
 		retweet_count = status.retweet_count
 		quotes_count = "--not implemented--" #HOW to get this?
-		favorites_count = status.favorited #Whether or not tweet was favorited rather than number of favorites
+		favorites_count = status.favorite_count #Whether or not tweet was favorited rather than number of favorites
 		author = status.author
 		is_news = "--not implemented--" #DEFINE LIST OF VALID NEWS AUTHORS
 
 
-		tweet = Tweet.Tweet(tweet_id = tweet_id, text = text, retweet_count = retweet_count, 
+		tweet = Tweet.Tweet(tweet_id = tweet_id, text = text, retweet_count = retweet_count,
 			quotes_count = quotes_count, favorites_count = favorites_count, author = author, is_news = is_news)
 		MineListener.tweets.append(tweet)
 
