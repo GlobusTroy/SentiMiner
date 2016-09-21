@@ -18,7 +18,7 @@ listener = MineListener()
 #Create stream object
 stream = tweepy.Stream(auth = api.auth, listener = listener)
 
-#Get stream running
+#Get stream running //  Put keywords here
 stream.filter(track = ['Trump','Hillary','Clinton'])
 
 #For testing purposes; limits count of tweets to 10
