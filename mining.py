@@ -19,7 +19,7 @@ listener = MineListener()
 stream = tweepy.Stream(auth = api.auth, listener = listener)
 
 #Get stream running
-stream.filter(track = ["Marc Andreessen"])
+stream.filter(track = ["stocks"])
 
 #For testing purposes; limits count of tweets to 10
 while (len(MineListener.tweets) < 10):
