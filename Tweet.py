@@ -26,10 +26,15 @@ class Tweet:
     def countEmojis(self, char_list):
         emoji_ctr = 0
         for char in char_list:
+
+            #convert character to utf-8
             char = repr(char)
             char = char[1:len(char)-1]
+
+            #every emoji has the following utf-8 format: \\xf0\\x9f\\x98\\x
             lst = char.count('\\xf0\\x9f\\x98\\x')
             emoji_ctr += lst
+
         return emoji_ctr
 
 
