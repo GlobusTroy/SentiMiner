@@ -69,4 +69,4 @@ class Tweet:
         print 'question_marks: ' + str(self.question_marks)
         print 'exclamationmarks: ' + str(self.exclamation_marks)
         print 'sentiment: ' + str(self.sentiment)
-        print 'emojis'+str(self.emoticons)
+        print 'emojis: '+str(self.emoticons)
