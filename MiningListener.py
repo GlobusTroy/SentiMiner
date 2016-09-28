@@ -9,7 +9,6 @@ class MineListener(tweepy.StreamListener):
         self.csv_path = ''
         self.TWEET_LIMIT = tweet_limit
         self.tweet_count = 0
-        print "ok"
 
     def on_status(self, status):
 
