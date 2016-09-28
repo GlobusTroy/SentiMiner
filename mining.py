@@ -1,5 +1,4 @@
 import tweepy
-import Tweet
 from MiningListener import MineListener
 import time
 
@@ -19,10 +18,10 @@ listener = MineListener()
 stream = tweepy.Stream(auth = api.auth, listener = listener)
 
 #Get stream running //  Put keywords here
-stream.filter(track = ["party"])
+stream.filter(track = ["party","game","sports","feelings"])
 
 #For testing purposes; limits count of tweets to 10
-while (len(MineListener.tweets) < 10):
+while (len(MineListener.tweets) < 5):
 	time.sleep(5)
 
 #Prints out all gathered twitter data

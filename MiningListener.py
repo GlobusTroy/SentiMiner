@@ -1,6 +1,5 @@
 import tweepy
 import Tweet
-from afinn import Afinn
 
 
 class MineListener(tweepy.StreamListener):
@@ -13,7 +12,7 @@ class MineListener(tweepy.StreamListener):
         if 1: #Add a condition for saving a tweet // Contains emoji, favorites, etc to test 
             print "Accepted!"
             tweet_id = status.id
-            text = status.text
+            text = status.text.encode("UTF-8")
             retweet_count = status.retweet_count
             quotes_count = "--not implemented--"  # HOW to get this?
             favorites_count = status.favorite_count
