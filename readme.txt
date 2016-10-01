@@ -14,6 +14,8 @@ How to set a tweet limit before disconnecting:
 	-add an argument tweet_limit
 		--ex: listener = MineListener(tweet_limit = 10)  
 	-now after 10 tweets are gathered and sent to the csv file, the stream will disconnect
+Similarly to the above, one can override the path of the file to which the data will be sent
+	-ex: listener = MineListener(csv_path = 'myFile.csv')
 
 How to specify what keywords to search for in mining.py as well
 	-in mining.py, go to the line where the stream starts running

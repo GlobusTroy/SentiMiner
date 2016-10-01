@@ -4,9 +4,9 @@ import Tweet
 
 class MineListener(tweepy.StreamListener):
 
-    def __init__(self, tweet_limit=0, api=None):
+    def __init__(self, tweet_limit=0, api=None, csv_path = ''):
         super(MineListener, self).__init__()
-        self.csv_path = ''
+        self.csv_path = csv_path
         self.TWEET_LIMIT = tweet_limit
         self.tweet_count = 0
 
@@ -16,6 +16,7 @@ class MineListener(tweepy.StreamListener):
 
         if self.TWEET_LIMIT == 0 or self.tweet_count < self.TWEET_LIMIT: #Can add a condition for saving a tweet 
             print "Accepted!"
+            
             tweet_id = status.id
             text = status.text.encode("UTF-8")
             retweet_count = status.retweet_count
