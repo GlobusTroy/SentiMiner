@@ -20,8 +20,3 @@ class GoogleQuote(StockQuote):
             timestamp = day + (intervalSeconds*offset)
             dateTime = datetime.datetime.fromtimestamp(timestamp)
             self.append(timestamp, dateTime, open_, high, low, close, volume)
-
-if __name__ == '__main__':
-    q = GoogleQuote('aapl', 3600, 1)
-    print(q)
-    print(q.getPriceAtTime(1475244000))

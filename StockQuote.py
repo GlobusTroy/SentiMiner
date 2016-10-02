@@ -1,4 +1,4 @@
-import urllib, time, datetime
+import urllib, time, datetime, csv
 from time import strftime
 
 class StockQuote(object):
@@ -33,17 +33,22 @@ class StockQuote(object):
         except ValueError:
             return "Stock information not found for: " + str(datetime.datetime.fromtimestamp(timestamp))
 
-    def to_csv(self):
+    def getCsvHeader(self):
+        return ['Stock Ticker', 'Date', 'Time', 'Open', 'High', 'Low', 'Close', 'Volume']
+
+    def toCSV(self):
         return ''.join(["{0},{1},{2},{3:.2f},{4:.2f},{5:.2f},{6:.2f},{7}\n".format(
                 self.symbol, self.date[element].strftime(self.DATE_FMT), self.time[element].strftime(self.TIME_FMT),
                 self.open_[element], self.high[element], self.low[element], self.close[element], self.volume[element])
                 for element in xrange(len(self.close))])
 
-    def write_csv(self, fileName):
+    def writeCSV(self, fileName):
         with open(fileName, 'w') as file:
-            file.write(self.to_csv())
+            writer = csv.writer(file)
+            writer.writerow(self.getCsvHeader())
+            file.write(self.toCSV())
 
     # TODO: Implement Read CSV Function
 
     def __repr__(self):
-        return self.to_csv()
+        return self.toCSV()
