@@ -12,23 +12,23 @@ CSV file information is returned in the following order:
 ID, text, isVerified, #retweets, #favorites, #followers, sentiment, #capitals, # of !, # of ?, #emoticons
 
 1. How to set a tweet limit before disconnecting:
-	* in mining.py, go to the line which instantiates MineListener
+	* In mining.py, go to the line which instantiates MineListener
 		* `listener = MineListener()`
-	* add an argument tweet_limit
+	* Add an argument tweet_limit
 		* ex: `listener = MineListener(tweet_limit = 10)`
-	* now after 10 tweets are gathered and sent to the csv file, the stream will disconnect
+	* Now after 10 tweets are gathered and sent to the csv file, the stream will disconnect
 	* Similarly to the above, one can override the path of the file to which the data will be sent
 		* ex: `listener = MineListener(csv_path = 'myFile.csv')`
 
 2. How to specify what keywords to search for in mining.py as well
-	* in *mining.py*, go to the line where the stream starts running
+	* In *mining.py*, go to the line where the stream starts running
 		* `stream.filter(track = ["party"])`
-	* add items to the list which track is set to
+	* Add items to the list which track is set to
 		* ex: `stream.filter(track = ["party","feelings","fun"])`
-	* now all the specified keywords will be included in the search
+	* Now all the specified keywords will be included in the search
 
 3. How to extract stock information:
-	* in *StockMining.py*, change `stockTicker` to desired stock symbol/ticker
-	* change `intervalInSeconds` to desired time interval in seconds
-	* change `periodInDays` to number of days that you wish to extract the stock info of
-	* to write the extracted data to a CSV file, uncomment the final two lines
+	* In *StockMining.py*, change `stockTicker` to desired stock symbol/ticker
+	* Change `intervalInSeconds` to desired time interval in seconds
+	* Change `periodInDays` to number of days that you wish to extract the stock info of
+	* To write the extracted data to a CSV file, uncomment the final two lines
