@@ -1,7 +1,8 @@
 from afinn import Afinn
+import csv
+
 
 class Tweet:
-
     def countCapitals(self, text):
         count = 0
         for char in text:
@@ -26,20 +27,18 @@ class Tweet:
     def countEmojis(self, char_list):
         emoji_ctr = 0
         for char in char_list:
-
-            #convert character to utf-8
+            # convert character to utf-8
             char = repr(char)
-            char = char[1:len(char)-1]
+            char = char[1:len(char) - 1]
 
-            #every emoji has the following utf-8 format: \\xf0\\x9f\\x98\\x
+            # every emoji has the following utf-8 format: \\xf0\\x9f\\x98\\x
             lst = char.count('\\xf0\\x9f\\x98\\x')
             emoji_ctr += lst
 
         return emoji_ctr
 
-
     # Derive: SENTIMENT, CAPITALS, QUESTION MARKS, EMOTICONS
-    def __init__(self, tweet_id, text, author, retweet_count, quotes_count, favorites_count, is_news):
+    def __init__(self, tweet_id, text, author, retweet_count, quotes_count, favorites_count, is_news, timestamp):
         self.tweet_id = tweet_id
         self.text = text
         self.text_char_list = text.split(" ")  # split to get emojis as UTF-8 encoding
@@ -48,6 +47,7 @@ class Tweet:
         self.quotes_count = quotes_count
         self.favorites_count = favorites_count
         self.is_news = is_news
+        self.timestamp = timestamp
 
         afinn = Afinn()
         self.sentiment = afinn.score(text)
@@ -57,7 +57,6 @@ class Tweet:
         self.exclamation_marks = self.countExclamationMarks(text)
         self.question_marks = self.countQuestionMarks(text)
         self.emoticons = self.countEmojis(self.text_char_list)
-
 
     def printData(self):
         print 'tweet_id: ' + str(self.tweet_id)
@@ -74,5 +73,31 @@ class Tweet:
         print 'question_marks: ' + str(self.question_marks)
         print 'exclamationmarks: ' + str(self.exclamation_marks)
         print 'sentiment: ' + str(self.sentiment)
-        print 'emojis: '+str(self.emoticons)
+        print 'emojis: ' + str(self.emoticons)
+        print 'timestamp: ' + str(self.timestamp)
 
+    # I HAVE EXCLUDED "Quotes Count" AS I DO NOT SEE A WAY TO SCRAPE THAT INFO YET
+    # Excluded is_news as that is not yet something we have a method to determine
+    def getCsvList(self):
+        """
+        Returns the info into a list in this order:
+        ID, text, isVerified, #retweets, #favorites, #followers, sentiment, #capitals, # of !, # of ?, #emoticons
+        """
+        return [self.tweet_id, self.text, self.verified, self.retweet_count,
+                self.favorites_count, self.follower_count, self.sentiment, self.capitals,
+                self.exclamation_marks, self.question_marks, self.emoticons]
+
+    def getCsvHeader(self):
+        return ['ID', 'Text', 'verified', 'retweet_count', 'favorites_count', 'follower_count',
+                'sentiment', 'capitals', 'exclamation_marks', 'question_marks', 'emoticons']
+
+    def writeHeaderToCsv(self, filename):
+        with open(filename, 'a') as csvfile:
+            writer = csv.writer(csvfile)
+            writer.writerow(self.getCsvHeader())
+
+    # Appends to the end of the target CSV file, or else creates a new one
+    def writeDataToCsv(self, filename):
+        with open(filename, 'a') as csvfile:
+            writer = csv.writer(csvfile)
+            writer.writerow(self.getCsvList())

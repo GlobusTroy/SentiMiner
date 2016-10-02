@@ -31,7 +31,6 @@ class MineListener(tweepy.StreamListener):
                                 quotes_count=quotes_count, favorites_count=favorites_count,
                                 author=author, is_news=is_news, timestamp = timestamp)
 
-
             #Sets the path of csv file to first timestamp we gather
             if self.csv_path == '':
                 self.csv_path = str(tweet.timestamp) + '.csv'
