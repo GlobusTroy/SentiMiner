@@ -4,6 +4,7 @@ from time import strftime
 class StockQuote(object):
     DATE_FMT = '%Y-%m-%d'
     TIME_FMT = '%H:%M:%S'
+    TIMESTAMP_FMT = '%m-%d-%Y %H:%M:%S' #Change is actual format of Tweet Timstamp is different
 
     def __init__(self):
         self.symbol = ''
@@ -26,13 +27,6 @@ class StockQuote(object):
         self.close.append(float(close))
         self.volume.append(int(volume))
 
-    def getPriceAtTime(self, timestamp):
-        try:
-            index = self.timestamp.index(timestamp)
-            return "Open: " + str(self.open_[index]) + ", Close: " + str(self.close[index])
-        except ValueError:
-            return "Stock information not found for: " + str(datetime.datetime.fromtimestamp(timestamp))
-
     def getCsvHeader(self):
         return ['Stock Ticker', 'Date', 'Time', 'Open', 'High', 'Low', 'Close', 'Volume']
 
@@ -52,3 +46,31 @@ class StockQuote(object):
 
     def __repr__(self):
         return self.toCSV()
+
+    def getDataAtTimes(self, timestampArr):
+        for timestamp in timestampArr:
+            print(self.getDataAtTime(timestamp))
+
+    def getDataAtTime(self, timestamp):
+        dt = datetime.datetime.fromtimestamp(timestamp)
+        try:
+            index = self.timestamp.index(timestamp)
+            return "At {0}, {1} opened at {2} and closed at {3}".format(dt,
+                    self.symbol, self.open_[index], self.close[index])
+        except ValueError:
+            return "Stock information not found at time: " + str(dt)
+
+    def readTweetCSV(self, fileName):
+        timestampArr = []
+        firstLine = True;
+        for line in open(fileName, 'r'):
+            if firstLine:
+                firstLine = False
+                continue
+            tokens = line.rstrip().split(',')
+            timeStr = tokens[0].strip() # Change hardcoded magic number
+            timestampArr.append(self.convertToTimestamp(timeStr))
+        return timestampArr
+
+    def convertToTimestamp(self, timeStr):
+        return int(time.mktime(datetime.datetime.strptime(timeStr, self.TIMESTAMP_FMT).timetuple()))
