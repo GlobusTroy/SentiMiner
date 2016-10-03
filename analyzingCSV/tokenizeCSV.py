@@ -23,3 +23,9 @@ with open(path, 'rb') as csvfile:
 		tokens = word_tokenize(line)
 		tagged = nltk.pos_tag(tokens)
 		print tagged
+
+li = ["Apple","Amazon","Disney"]
+similar = []
+for brand in li:
+	if wordnet.synset(brand+".n.01").wup_similarity(wordnet.synset(desired+".n.01"))>.8:
+		similar.append(True)
