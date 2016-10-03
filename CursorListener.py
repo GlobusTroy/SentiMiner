@@ -13,8 +13,7 @@ class CursorListener():
 
         print "Getting tweets"
 
-        searched_tweets = [status for status in
-                           tweepy.Cursor(self.twitter_api.search, q=self.stock_query).items(self.max_limit)]
+        searched_tweets = [status for status in tweepy.Cursor(self.twitter_api.search, q=self.stock_query).items(self.max_limit)]
         for status in searched_tweets:
 
             tweet_id = status.id

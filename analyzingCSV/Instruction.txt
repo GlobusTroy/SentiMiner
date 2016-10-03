@@ -1,0 +1,1 @@
+This branch is sorely for analyzing the streaming tweets from Twitter. I'm currentlying working how to update data import from Twitter's streaming data. A lot more to work on...Please do not merge the branch yet.
