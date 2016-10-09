@@ -1,10 +1,15 @@
 cycler==0.10.0
+DateTime==4.1.1
 matplotlib==1.5.3
 nltk==3.2.1
 numpy==1.11.2
+pandas==0.19.0
+plotly==1.12.9
 pyparsing==2.1.10
 python-dateutil==2.5.3
 pytz==2016.7
+requests==2.11.1
 simplejson==3.8.2
 six==1.10.0
 yahoo-finance==1.2.1
+zope.interface==4.3.2
