@@ -1,0 +1,10 @@
+cycler==0.10.0
+matplotlib==1.5.3
+nltk==3.2.1
+numpy==1.11.2
+pyparsing==2.1.10
+python-dateutil==2.5.3
+pytz==2016.7
+simplejson==3.8.2
+six==1.10.0
+yahoo-finance==1.2.1

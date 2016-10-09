@@ -1,0 +1,19 @@
+from yahoo_finance import Share
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+import matplotlib.ticker as mticker
+from matplotlib.finance import candlestick_ohlc
+
+
+
+targetCompany = null
+
+def getCompany(company):
+    targetCompany = Share(company)
+
+def getCompanyHistoricalStock(startDate,endDate):
+    output = open('stock'+startDate+'-'+endDate+'.csv','a')
+    output.write(targetCompany.get_historical(startDate,endDate)
+    output.close()
+    #print targetCompany.get_historical(startDate, endDate)
+
