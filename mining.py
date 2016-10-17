@@ -19,13 +19,13 @@ api = getAuthenticatedAPI()
 
 # No tweet_limit parameter means no limit, otherwise add
 # Minelistener(tweet_limit = x) to stop after x tweets
-listener = MineListener(tweet_limit=10)
+"""listener = MineListener(tweet_limit=10)
 
 # Create stream object
 stream = tweepy.Stream(auth=api.auth, listener=listener)
 
 # Get stream running //  Put keywords here
-stream.filter(track=["party"])
+stream.filter(track=["party"])"""
 
 
 #First create a stock_tweets object then write_tweets writes max_limit number of tweets to a file

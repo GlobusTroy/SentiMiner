@@ -85,11 +85,11 @@ class Tweet:
         """
         return [self.tweet_id, self.text, self.verified, self.retweet_count,
                 self.favorites_count, self.follower_count, self.sentiment, self.capitals,
-                self.exclamation_marks, self.question_marks, self.emoticons]
+                self.exclamation_marks, self.question_marks, self.emoticons,self.timestamp]
 
     def getCsvHeader(self):
         return ['ID', 'Text', 'verified', 'retweet_count', 'favorites_count', 'follower_count',
-                'sentiment', 'capitals', 'exclamation_marks', 'question_marks', 'emoticons']
+                'sentiment', 'capitals', 'exclamation_marks', 'question_marks', 'emoticons','timestamp']
 
     def writeHeaderToCsv(self, filename):
         with open(filename, 'a') as csvfile:

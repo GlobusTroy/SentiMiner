@@ -15,6 +15,7 @@ class CursorListener():
 
         searched_tweets = [status for status in
                            tweepy.Cursor(self.twitter_api.search, q=self.stock_query).items(self.max_limit)]
+        collected_tweets = {}
         for status in searched_tweets:
 
             tweet_id = status.id
@@ -37,5 +38,10 @@ class CursorListener():
                 print "Writing data to: " + self.csv_path
                 tweet.writeHeaderToCsv(self.csv_path)
 
-            # Writes the processed info to the file at csv_path
-            tweet.writeDataToCsv(self.csv_path)
+            #hashmap for duplicating tweets
+            if tweet.tweet_id not in collected_tweets.keys():
+                collected_tweets[tweet.tweet_id] = tweet
+
+        # Writes the processed info to the file at csv_path
+        for tweet_id in collected_tweets.keys():
+            collected_tweets[tweet_id].writeDataToCsv(self.csv_path)
