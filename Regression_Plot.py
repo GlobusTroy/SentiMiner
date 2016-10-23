@@ -4,7 +4,7 @@ import seaborn as sns
 import matplotlib
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('date_to_ss',header=0)
+df = pd.read_csv('date_to_ss.csv',header=0)
 sentiment = df['Sentiment_Score']
 stock_val=df['Stock_Value'] #Change According to Column name in date_to_ss
 
