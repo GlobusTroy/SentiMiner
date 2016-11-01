@@ -31,6 +31,6 @@ stream.filter(track=["party"])"""
 #First create a stock_tweets object then write_tweets writes max_limit number of tweets to a file
 #with name = stock_query + tweet.timestamp + .csv
 
-stock_tweets = CursorListener(query="$AAPL", max_limit=100, twitter_api=api)
+stock_tweets = CursorListener(query="$GOOGL", max_limit=100, twitter_api=api)
 
 stock_tweets.write_tweets()
