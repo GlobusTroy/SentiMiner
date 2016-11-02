@@ -78,12 +78,12 @@ class Tweet:
                 'sentiment', 'capitals', 'exclamation_marks', 'question_marks','timestamp']
 
     def writeHeaderToCsv(self, filename):
-        with open(filename, 'a') as csvfile:
+        with open('Tweet Data/'+filename, 'a') as csvfile:
             writer = csv.writer(csvfile)
             writer.writerow(self.getCsvHeader())
 
     # Appends to the end of the target CSV file, or else creates a new one
     def writeDataToCsv(self, filename):
-        with open(filename, 'a') as csvfile:
+        with open('Tweet Data/'+filename, 'a') as csvfile:
             writer = csv.writer(csvfile)
             writer.writerow(self.getCsvList())
