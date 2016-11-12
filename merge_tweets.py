@@ -9,3 +9,4 @@ for company in companies:
             with open(file, 'r') as csvfile:
                 outfile.write(csvfile.read())
                 outfile.write('\n')
+print("Done")
