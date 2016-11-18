@@ -1,7 +1,0 @@
-
-
-consumer_key: 	WuOEiRzGJzlHt1H2imTCPUpfR
-consumer_secret: X47THIKVxHqGxdHv8AkrcwyU3bH1NW91gIBang8mamhGim7n2Z
-
-access_token: 778344887867416576-jKrxd6xzfdCispj9HTPpN4DEZwkkIJV
-access_token_secret: vgLsPQLtoRaIqfJjaRd7jLUvVMyhazYsrYhvLucjv9Q5r
