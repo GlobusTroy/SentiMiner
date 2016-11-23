@@ -33,8 +33,15 @@ class gen_training_set(object):
 
         df_2.to_csv(self.filename + "_info.csv", sep=',')
 
+    def format_date(self,date):
+        date = date.replace("-","/")
+        date_split = date.split("/")
+        date = date_split[2] + "/" + date_split[1] + "/" + date_split[0][2:]
+
+        return date
+
     def make_training_set(self):
-        stock_df = pd.read_csv(self.filename +"_stock.csv",low_memory=False)
+        stock_df = pd.read_csv(self.filename+"/"+self.filename +"_stock.csv",low_memory=False)
         keys  = stock_df.columns
 
         dates_to_stock = {}
@@ -43,9 +50,7 @@ class gen_training_set(object):
         for i in range(0,len(stock_df)):
             date = stock_df.get_value(i,keys[1])
             if "-" in date:
-                date = date.replace("-","/")
-                date_split = date.split("/")
-                date = date_split[2] + "/" + date_split[1] + "/" + date_split[0][2:]
+                date = format_date(self,date)
             elif self.filename == "FB":
                 date_split = date.split("/")
                 date = date_split[1] + "/" + date_split[0] + "/" + date_split[2]
@@ -53,8 +58,9 @@ class gen_training_set(object):
             opening = stock_df.get_value(i,keys[3])
             closing = stock_df.get_value(i,keys[6])
             dates_to_stock[date] = abs(opening-closing)
+
         #Senitment scores and Tweets
-        df = pd.read_csv(self.filename + "_info.csv",low_memory=False)
+        df = pd.read_csv(self.filename+"/"+self.filename+"_info.csv",low_memory=False)
         info_keys = df.columns
 
         dates_to_scores = {}
@@ -69,17 +75,18 @@ class gen_training_set(object):
             score = float(df.get_value(i,info_keys[3]))
 
             if prev_date!=date:
-                prev_date = prev_date.replace("-","/")
-                date_split = prev_date.split("/")
-                prev_date = date_split[2] + "/" + date_split[1] + "/" + date_split[0][2:]
+                #aggregate all data for that day
+                prev_date = self.format_date(prev_date)
                 data = Counter(sentiments)
                 dates_to_scores[prev_date] = [data.most_common(1)[0][0],round(sum(sentiments)/len(sentiments),0)]#[mod,average sentiment]
                 sentiments = []
                 sentiments.append(score)
             else:
+                #don't consider sentiment with scores of zero
                 if score!=0.0:
                     sentiments.append(score)
             prev_date = date
+
         #New dataframe
         df_2 = pd.DataFrame()
 
@@ -87,9 +94,6 @@ class gen_training_set(object):
         df_2.insert(1,"Mod Score",0)
         df_2.insert(2,"Average Score",0)
         df_2.insert(3,"Stock Price",0)
-
-        #print dates_to_stock
-        #print dates_to_scores
 
         keys = dates_to_scores.keys()
         ctr = 0
@@ -104,19 +108,21 @@ class gen_training_set(object):
                     d[1] = d[1] + 1
                 nxt_date = str(d[0]) + "/0" + str(d[1]) + "/" + str(d[2])
                 vals = dates_to_scores[nxt_date]
+                dates_to_stock_value = dates_to_stock[keys[i]]
                 df_2.set_value(i,"Date",keys[i])
                 df_2.set_value(i,"Mod Score",vals[1])
                 df_2.set_value(i,"Average Score",vals[0])
-                df_2.set_value(i,"Stock Price",dates_to_stock[keys[i]])
+                df_2.set_value(i,"Stock Price",dates_to_stock_value)
+                print keys[i],vals[1],vals[0],dates_to_stock_value
                 ctr+=1
             except KeyError:
                 pass
 
         print ctr
-        df_2.to_csv(self.filename +"_training_set.csv",sep=",")
+        df_2.to_csv(self.filename+"/"+self.filename+"_training_set.csv",sep=",")
 
 
 
-obj = gen_training_set(x)
+obj = gen_training_set("FB")
 #obj.clean_data()
 obj.make_training_set()
