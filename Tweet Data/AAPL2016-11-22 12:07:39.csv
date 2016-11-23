@@ -1,0 +1,101 @@
+ID,Text,verified,retweet_count,favorites_count,follower_count,sentiment,capitals,exclamation_marks,question_marks,timestamp
+801034404298534912,u'RT @MarketWatch: Apple faces a decade of uncertainty after next year\u2019s iPhone: https://t.co/0gPPhEysUI $AAPL https://t.co/jOdgmOTDo9',False,26,0,720,0.0,19,0,0,2016-11-22 12:07:39
+801033777317171200,u'Apple patents foldable iPhone with flexible display that can clip onto clothing https://t.co/k5mrjJwDVp\u2026 https://t.co/a9Ec2F8dzg',False,0,0,1585,0.0,7,0,0,2016-11-22 12:05:09
+801030295352791042,u'#Apple to replace faulty iPhone 6s batteries for free. Read more: https://t.co/SxAaYReY8E $AAPL',False,0,0,117,1.0,13,0,0,2016-11-22 11:51:19
+801033287963590659,u'How to reset #Apple ID - email address and password. Read more: https://t.co/MiXwo5mVl9 $AAPL',False,0,0,257,0.0,12,0,0,2016-11-22 12:03:12
+801033753627750404,"u""iPhone 'prank' video crashes #Apple smartphones. Read more: https://t.co/W8IYnhlKxW $AAPL""",False,0,0,117,0.0,12,0,0,2016-11-22 12:05:04
+801029051804569605,"u'#Apple Confirms Flaw In iPhone 6 Plus, Agrees To Repair. Read more: https://t.co/TmTEMBD9kQ $AAPL'",False,0,0,257,-1.0,21,0,0,2016-11-22 11:46:23
+801033753585860608,"u""iPhone 'prank' video crashes #Apple smartphones. Read more: https://t.co/2UHQvXiodZ $AAPL""",False,0,0,257,0.0,12,0,0,2016-11-22 12:05:03
+801031694253899777,u'#Apple Launches Free Battery Replacement Program For Faulty iPhone 6s Devices. Read more: https://t.co/s1DCSRNIDk $AAPL',False,0,0,117,1.0,22,0,0,2016-11-22 11:56:53
+801027652970627074,u'#Apple Malicious Link Will Cause iOS Devices To Crash. Read more: https://t.co/GKStGCD3PD $AAPL',False,0,0,257,-2.0,23,0,0,2016-11-22 11:40:49
+801029984491945988,u'#Apple offers free battery replacements for some iPhone 6S handsets that keep shutting down. Read more: https://t.co/FhVz33lytr $AAPL',False,0,0,117,1.0,10,0,0,2016-11-22 11:50:05
+801027342084673536,"u""#Apple Doom running on the MacBook Pro's Touch Bar is the latest hilarious 'Doom on dumb st... Read more: https://t.co/nxtNfpmJFI $AAPL""",False,0,0,257,-5.0,17,0,0,2016-11-22 11:39:35
+801021859017986048,u'RT @DozenStocks: Weekly Dow #Stocks Trend $MSFT $CVX $IBM $AAPL $DD $V $GS $JPM $MCD $AXP $CAT $BA $XOM $UNH $NKE $GE $DIS $VZ  @ https://t\u2026',False,1,0,1378,3.0,57,0,0,2016-11-22 11:17:48
+801024215084208133,u'RT @electronic_eqpt: #Apple reportedly shuts down AirPort router division. Read more: https://t.co/mYcIS3Pu2J $AAPL',False,1,0,3045,0.0,15,0,0,2016-11-22 11:27:09
+801023888016674816,u'RT @computer_hware: #Apple reportedly shuts down AirPort router division. Read more: https://t.co/FJI3WoKclh $AAPL',False,2,0,1378,0.0,15,0,0,2016-11-22 11:25:51
+801032129920368641,u'RT @MarketWatch: Apple faces a decade of uncertainty after next year\u2019s iPhone: https://t.co/0gPPhEysUI $AAPL https://t.co/jOdgmOTDo9',False,26,0,2079,0.0,19,0,0,2016-11-22 11:58:36
+801027652991602688,u'#Apple Malicious Link Will Cause iOS Devices To Crash. Read more: https://t.co/HWRJ2Y01MV $AAPL',False,0,0,117,-2.0,22,0,0,2016-11-22 11:40:49
+801022989756088322,u'#Apple Late 2016 MacBook Pro capped at 16GB RAM because batteries. Read more: https://t.co/qZAkJ4C4AM $AAPL',False,0,0,257,0.0,21,0,0,2016-11-22 11:22:17
+801030606226194432,u'#Apple offers free battery replacement for iPhone 6S shutdown problem. Read more: https://t.co/xE5JSkn2mQ $AAPL',False,0,0,257,-1.0,12,0,0,2016-11-22 11:52:33
+801028297031380992,"u""Cramer fires back at Apple analysts 'making a big mistake' $AAPL https://t.co/Jxm3nMmhpd""",False,0,1,70,-1.0,8,0,0,2016-11-22 11:43:23
+801027342105616384,"u""#Apple Doom running on the MacBook Pro's Touch Bar is the latest hilarious 'Doom on dumb st... Read more: https://t.co/QhRIXAHgwU $AAPL""",False,0,0,117,-5.0,20,0,0,2016-11-22 11:39:35
+801029207107063809,"u'#Apple confirms flaw in iPhone 6 Plus, agrees to repair. Read more: https://t.co/0ChuSbOcMg $AAPL'",False,0,0,257,-1.0,12,0,0,2016-11-22 11:47:00
+801023942286839808,u'Time To Start Buying iShares Philippines https://t.co/IicKpt3Opb $AAPL $BA $MCD $SBUX $WFC $EPHE',False,1,0,3051,0.0,29,0,0,2016-11-22 11:26:04
+801031849749323776,u'#Apple Launches Battery Replacement Program For iPhone 6s Devices With Spontaneous Shutdown... Read more: https://t.co/dy7dhZMWov $AAPL',False,0,0,257,0.0,19,0,0,2016-11-22 11:57:30
+801027583395635200,u'RT @FedPorn: Has $AAPL and the like started to bring home the money overseas since Trump won? https://t.co/yVm0emKiSj',False,1,0,272,5.0,13,0,1,2016-11-22 11:40:32
+801020645740072960,u'$AAPL @JimCramer fires back at Apple analysts &amp;#039;making a big mistake&amp;#039; https://t.co/2QkvTU038R',False,0,0,2480,-1.0,11,0,0,2016-11-22 11:12:58
+801027986933874689,"u'Cheap call option upside: $TWX calls cheaper than 100% of history, $PCLN 99%, $ORCL 99%, $CSCO 99%, $AMZN 99%, $AAPL 99%, $DIS 98%'",False,0,1,712,0.0,27,0,0,2016-11-22 11:42:09
+801027808394809345,u'#Apple Doom launched on the trackpad MacBook Pro (video). Read more: https://t.co/qNvbXlm6XY $AAPL',False,0,1,117,-1.0,14,0,0,2016-11-22 11:41:26
+801031227918557185,u'#Apple to replace dodgy iPhone 6s batteries. Read more: https://t.co/moc8v3kOuJ $AAPL',False,0,0,117,-2.0,9,0,0,2016-11-22 11:55:01
+801027031190228992,u'#Apple On the MacBook Pro touchpad launched Doom. Read more: https://t.co/1H9Ouin4M2 $AAPL',False,0,0,257,-1.0,14,0,0,2016-11-22 11:38:21
+801027497638825985,"u""#Apple There's another malicious link floating around that will cause any iOS device to fre... Read more: https://t.co/ULPXWTMyXI $AAPL""",False,0,0,117,0.0,18,0,0,2016-11-22 11:40:12
+801020003545792512,u'$aapl is bad',False,0,0,3,-3.0,0,0,0,2016-11-22 11:10:25
+801030606196854785,u'#Apple offers free battery replacement for iPhone 6S shutdown problem. Read more: https://t.co/rbbLfEM57V $AAPL',False,0,0,117,-1.0,12,0,0,2016-11-22 11:52:33
+801025166268502016,u'#Apple Inc.: Analyst Issues Grim 10-year Call on Stock. Read more: https://t.co/o2yAcmflBg $AAPL',False,0,0,117,-2.0,14,0,0,2016-11-22 11:30:56
+801022989781245953,u'#Apple Late 2016 MacBook Pro capped at 16GB RAM because batteries. Read more: https://t.co/Oi354UOgP8 $AAPL',False,1,0,117,0.0,19,0,0,2016-11-22 11:22:17
+801025390441443328,"u""#Samsung and #Apple's grip on #smartphone market slips to less than one in three sales $SSNLF $AAPL\u2026 https://t.co/f1dAEoLn7l""",False,1,3,2079,0.0,14,0,0,2016-11-22 11:31:50
+801029051682983937,"u'#Apple Confirms Flaw In iPhone 6 Plus, Agrees To Repair. Read more: https://t.co/UDhO8p2N8O $AAPL'",False,0,0,117,-1.0,19,0,0,2016-11-22 11:46:22
+801028209018019840,u'$AAPL a long since 110.23 was broken. Targets 111.8(hit) &amp; 113.11. Bears need to retake 107.53 first. Weekly formin\u2026 https://t.co/Le4qmLjdYg',False,0,1,4210,-3.0,10,0,0,2016-11-22 11:43:02
+801031383392997376,u'#Apple Your iPhone 6S may qualify for free battery replacement. Read more: https://t.co/2Q0IKWrIcC $AAPL',False,0,0,117,1.0,15,0,0,2016-11-22 11:55:38
+801026933777727488,u'RT @DailyStockPlays: Why These Stocks Were Up https://t.co/vbGjjojRG1 $APD $APA $AAPL $CMCM $CVX $ECR $FB $FCX $GALE $HAL $HW $HP $KBR $KITE',False,1,0,1378,0.0,56,0,0,2016-11-22 11:37:58
+801020351824076800,"u""RT @TheStreet: .@JimCramer -- 'Apple is spending a lot on R&amp;D and I don't think that they are being idle:' https://t.co/jtJfwT8JJE $AAPL $H\u2026""",False,21,0,322,0.0,20,0,0,2016-11-22 11:11:48
+801027063071141888,u'RT @72olds: We have 2 more days of Trading b4 the holiday. That gives $AAPL time to hit the $115 area and $NFLX to GO over $120.',False,1,0,1050,0.0,15,0,0,2016-11-22 11:38:28
+801029984475152384,u'#Apple offers free battery replacements for some iPhone 6S handsets that keep shutting down. Read more: https://t.co/OqmBxsN0Kg $AAPL',False,0,0,257,1.0,12,0,0,2016-11-22 11:50:05
+801031538859094016,u'#Apple claims that since the release of the first iPhone the company has created more than ... Read more: https://t.co/4sWDzeesLh $AAPL',False,0,0,117,0.0,10,0,0,2016-11-22 11:56:15
+801023145134026752,"u""#Apple No 32 GB RAM New MacBook Pro Option? That's Because It Would've Reduced Battery Life... Read more: https://t.co/6P8EtHdIrY $AAPL""",False,0,0,257,-1.0,29,0,1,2016-11-22 11:22:54
+801024855340564480,u'#Apple Announces One-Day Black Friday Sale Event for 2016. Read more: https://t.co/728G3p432W $AAPL',False,0,0,117,0.0,15,0,0,2016-11-22 11:29:42
+801020844684103680,"u'RT @silverjet2: Bullish MACD, Price&gt;20.00, above 21-dMA, Vol&gt;500K \xbd: $CCK $EXC $SE $GRUB $VNTV $BNS $AAPL $MSFT $BKLN $ACN $DOX $ALB $COUP\u2026'",False,1,0,1378,0.0,56,0,0,2016-11-22 11:13:46
+801031849711538176,u'#Apple Launches Battery Replacement Program For iPhone 6s Devices With Spontaneous Shutdown... Read more: https://t.co/wbnuDIREkU $AAPL',False,0,0,117,0.0,21,0,0,2016-11-22 11:57:30
+801029518597070849,"u'#Apple confirms flaw in iPhone 6 Plus, agrees to repair. Read more: https://t.co/fZJi6TPEeM $AAPL'",False,0,0,117,-1.0,14,0,0,2016-11-22 11:48:14
+801030450785308672,u'#Apple offers free iPhone 6S battery replacements. Read more: https://t.co/AycfDGFREp $AAPL',False,0,0,117,1.0,14,0,0,2016-11-22 11:51:56
+801023145180135424,"u""#Apple No 32 GB RAM New MacBook Pro Option? That's Because It Would've Reduced Battery Life... Read more: https://t.co/51Y4swBqUB $AAPL""",False,0,0,117,-1.0,28,0,1,2016-11-22 11:22:54
+801029518030839808,"u'#Apple confirms flaw in iPhone 6 Plus, agrees to repair. Read more: https://t.co/rL2IJaouOQ $AAPL'",False,0,0,257,-1.0,13,0,0,2016-11-22 11:48:14
+801022932021612545,u'$AAPL $MSFT:\n\nMarkets Would Struggle to Digest Corporate Tax Reform:\n\nhttps://t.co/dgqOrXwlMm',False,0,0,707,-6.0,18,0,0,2016-11-22 11:22:03
+801028847516852225,"u""RT @andreascseh: #Samsung and #Apple's grip on #smartphone market slips to less than one in three sales $SSNLF $AAPL https://t.co/eCSliZedX\u2026""",False,1,0,720,0.0,17,0,0,2016-11-22 11:45:34
+801027299017625604,"u'Saying that Apple lacks ""courage"" and is about to enter a decade long malaise seemed like ad hominem attacks to me.\u2026 https://t.co/IJuQYa8Jnb'",True,1,6,982182,3.0,7,0,0,2016-11-22 11:39:25
+801027186681491456,u'#Apple On the MacBook Pro touchpad launched Doom. Read more: https://t.co/02KYwhjnFj $AAPL',False,0,0,117,-1.0,14,0,0,2016-11-22 11:38:58
+801030139869962240,u'#Apple offers free iPhone 6S battery replacements. Read more: https://t.co/MCsq6i2nRh $AAPL',False,0,0,257,1.0,11,0,0,2016-11-22 11:50:42
+801028964034760705,"u""RT @bobbyw24: Apple Isn't Massively Benefiting From #Samsung Note 7 Recall, But Google P#ixel Is https://t.co/YYu80kI5TN $AAPL $GOOG $GOOGL\u2026""",False,1,0,1378,0.0,32,0,0,2016-11-22 11:46:02
+801025010731098112,"u""#Apple Store cryptically previews one-day Black Friday 'shopping event'. Read more: https://t.co/aOv70d2Gdm $AAPL""",False,0,0,257,0.0,11,0,0,2016-11-22 11:30:19
+801029362602491904,"u'#Apple confirms flaw in iPhone 6 Plus, launches new repair programme. Read more: https://t.co/ojkBfQC3iY $AAPL'",False,0,0,257,-2.0,12,0,0,2016-11-22 11:47:37
+801025321755521024,"u'Black Friday 2016 UK - #Apple teases one-day DEALS with iPhone, MacBook Pro, iPad discounts. Read more: https://t.co/x2euk6LkgJ $AAPL'",False,0,0,257,0.0,22,0,0,2016-11-22 11:31:33
+801025833485729792,"u""Apple Isn't Massively Benefiting From #Samsung Note 7 Recall, But Google P#ixel Is https://t.co/YYu80kI5TN $AAPL $GOOG $GOOGL  $SSNLF""",False,1,0,2480,0.0,35,0,0,2016-11-22 11:33:35
+801033287934193664,u'How to reset #Apple ID - email address and password. Read more: https://t.co/SZSsi2hAzO $AAPL',False,0,0,117,0.0,14,0,0,2016-11-22 12:03:12
+801025010752102401,"u'Black Friday 2016 UK - #Apple teases one-day DEALS with iPhone, MacBook Pro, iPad discounts. Read more: https://t.co/LOP2vnQkpf $AAPL'",False,0,0,117,0.0,24,0,0,2016-11-22 11:30:19
+801031694228672512,u'#Apple Launches Free Battery Replacement Program For Faulty iPhone 6s Devices. Read more: https://t.co/HNETjZw61t $AAPL',False,0,0,257,1.0,20,0,0,2016-11-22 11:56:53
+801020844004835328,"u'RT @OwensAssetFund: $YM_F, $ES_F, $NQ_F, $CL_F, $NG_F, $AAPL, $BABA, $FB, $TWTR. Updating Technical Analysis Documents available. See https\u2026'",False,1,0,1378,0.0,39,0,0,2016-11-22 11:13:46
+801030139911880704,u'#Apple to replace the battery of faulty iPhone 6S devices free-of-cost. Read more: https://t.co/fg7E4bBHhO $AAPL',False,0,0,117,1.0,12,0,0,2016-11-22 11:50:42
+801025918579785728,u'RT @pelias01: Time To Start Buying iShares Philippines https://t.co/IicKpt3Opb $AAPL $BA $MCD $SBUX $WFC $EPHE',False,1,0,1378,0.0,31,0,0,2016-11-22 11:33:55
+801030295323430912,u'#Apple to replace faulty iPhone 6s batteries for free. Read more: https://t.co/WbD9mcfp7G $AAPL',False,0,0,257,1.0,10,0,0,2016-11-22 11:51:19
+801025321684172800,"u""#Apple Store cryptically previews one-day Black Friday 'shopping event'. Read more: https://t.co/TTwChyHeHZ $AAPL""",False,0,0,117,0.0,15,0,0,2016-11-22 11:31:33
+801022523487883265,u'#Apple reportedly shuts down AirPort router division. Read more: https://t.co/mYcIS3Pu2J $AAPL',False,1,0,257,0.0,13,0,0,2016-11-22 11:20:26
+801022523479465984,u'#Apple reportedly shuts down AirPort router division. Read more: https://t.co/FJI3WoKclh $AAPL',False,2,0,117,0.0,13,0,0,2016-11-22 11:20:26
+801029207170039808,"u'#Apple confirms flaw in iPhone 6 Plus, agrees to repair. Read more: https://t.co/tcalh7D0HK $AAPL'",False,0,0,117,-1.0,11,0,0,2016-11-22 11:47:00
+801024858259910656,u'Apple Inc. Might Be Preparing for Blowout iPhone Sales in Fiscal 2018 -- The Motley Fool $AAPL https://t.co/oCXpf28cBm',False,0,0,2480,-2.0,19,0,0,2016-11-22 11:29:43
+801029362581549057,"u'#Apple confirms flaw in iPhone 6 Plus, launches new repair programme. Read more: https://t.co/if19ovryrW $AAPL'",False,0,0,117,-2.0,9,0,0,2016-11-22 11:47:37
+801027186627002368,u'#Apple DOOM launched on the touchpad of the new MacBook Pro. Read more: https://t.co/ENWIcMHQhY $AAPL',False,0,0,257,-1.0,21,0,0,2016-11-22 11:38:58
+801022544153341952,u'PortfolioBuzz: Having 10 different news tabs open for $AAPL $DB $BP? We give you 1 https://t.co/aK85bdYKr6 https://t.co/WW15pmX0t3',False,0,0,83,0.0,18,0,1,2016-11-22 11:20:31
+801032005110501376,u'#Apple confirms free iPhone 6S battery replacement . Read more: https://t.co/ABr4AxCBsD $AAPL',False,0,0,117,1.0,14,0,0,2016-11-22 11:58:07
+801024529866911744,"u'Now you can listen to $AAPL Apple Music #sonymusic , watch $SNE #SONY Sony LIV movies in your Ola cab ride https://t.co/ciUjyMjigc @mashable'",False,0,1,600,0.0,21,0,0,2016-11-22 11:28:24
+801027201441218561,u'$aapl is sad',False,0,0,3,-2.0,0,0,0,2016-11-22 11:39:01
+801027031303483392,u'#Apple DOOM launched on the touchpad of the new MacBook Pro. Read more: https://t.co/NVXLW2i212 $AAPL',False,0,0,117,-1.0,18,0,0,2016-11-22 11:38:21
+801031538875895809,u'#Apple claims that since the release of the first iPhone the company has created more than ... Read more: https://t.co/XjBZvgbDjH $AAPL',False,0,0,257,0.0,12,0,0,2016-11-22 11:56:15
+801032005139865600,u'#Apple confirms free iPhone 6S battery replacement . Read more: https://t.co/WrKgalO60V $AAPL',False,0,0,257,1.0,12,0,0,2016-11-22 11:58:07
+801031072448294913,u'Your iPhone 6s shuts down unexpectedly? #Apple has a battery replacement program . Read more: https://t.co/IY8FRebXk8 $AAPL',False,0,0,117,0.0,13,0,1,2016-11-22 11:54:24
+801032497513381888,u'$SPY $AAPL $BAC options have the highest volume. Free options screener. https://t.co/OL0HyZrqvf',False,0,0,273,1.0,15,0,0,2016-11-22 12:00:04
+801027497538113537,"u""#Apple There's another malicious link floating around that will cause any iOS device to fre... Read more: https://t.co/tvfUOX5siG $AAPL""",False,0,0,257,0.0,13,0,0,2016-11-22 11:40:12
+801031383372050432,u'#Apple Your iPhone 6S may qualify for free battery replacement. Read more: https://t.co/MUDdV4Bfns $AAPL',False,0,0,257,1.0,14,0,0,2016-11-22 11:55:38
+801030761654562817,u'#Apple Is Offering Replacements for iPhone 6s Models That Randomly Shut Down. Read more: https://t.co/br3NtF8UZU $AAPL',False,0,0,117,0.0,20,0,0,2016-11-22 11:53:10
+801031072469241856,u'Your iPhone 6s shuts down unexpectedly? #Apple has a battery replacement program . Read more: https://t.co/olNV5iBXtT $AAPL',False,0,0,257,0.0,13,0,1,2016-11-22 11:54:24
+801024216451534848,u'RT @computer_hware: #Apple reportedly shuts down AirPort router division. Read more: https://t.co/FJI3WoKclh $AAPL',False,2,0,3045,0.0,15,0,0,2016-11-22 11:27:10
+801025829325127680,u'Why These Stocks Were Up https://t.co/vbGjjojRG1 $APD $APA $AAPL $CMCM $CVX $ECR $FB $FCX $GALE $HAL $HW $HP $KBR $KITE',False,1,0,5188,0.0,51,0,0,2016-11-22 11:33:34
+801024855290171392,u'#Apple Announces One-Day Black Friday Sale Event for 2016. Read more: https://t.co/6Y4vxrj0eA $AAPL',False,0,0,257,0.0,15,0,0,2016-11-22 11:29:42
+801025166255849473,u'#Apple Inc.: Analyst Issues Grim 10-year Call on Stock. Read more: https://t.co/2AP0dr8Kk2 $AAPL',False,0,0,257,-2.0,15,0,0,2016-11-22 11:30:56
+801030761667170304,u'#Apple Is Offering Replacements for iPhone 6s Models That Randomly Shut Down. Read more: https://t.co/RZIXT4cNmA $AAPL',False,0,0,257,0.0,22,0,0,2016-11-22 11:53:10
+801032379804581888,u'$SNE #SONY UP $30.71 #ASK #PREMARKET @cnbc @MariaBartiromo $AMD $NVDA $AMAT $QCOM $AAPL $AMZN $BABA $FB $GOOGL $SSNLF $FOXA $CMCSA $VZ $S $T',False,0,0,600,0.0,75,0,0,2016-11-22 11:59:36
+801031227905970176,u'#Apple to replace dodgy iPhone 6s batteries. Read more: https://t.co/Gf61Evf8zq $AAPL',False,0,0,257,-2.0,9,0,0,2016-11-22 11:55:01
+801024197107384320,u'RT @computer_hware: #Apple Late 2016 MacBook Pro capped at 16GB RAM because batteries. Read more: https://t.co/Oi354UOgP8 $AAPL',False,1,0,3045,0.0,21,0,0,2016-11-22 11:27:05
+801027808357007361,u'#Apple Doom launched on the trackpad MacBook Pro (video). Read more: https://t.co/kbYdqJUD9K $AAPL',False,0,1,257,-1.0,15,0,0,2016-11-22 11:41:26
+801030637880803328,"u""RT @SeekingAlpha: Tracking David Einhorn's Portfolio - Q3 2016 Update https://t.co/OKgLLXV18U $AAPL #APPLE $ABC $ACM $AER $AGR $ARRS $AYA $\u2026""",False,2,0,99,0.0,45,0,0,2016-11-22 11:52:41
+801030450743414784,u'#Apple to replace the battery of faulty iPhone 6S devices free-of-cost. Read more: https://t.co/HY2y889AQq $AAPL',False,0,0,257,1.0,12,0,0,2016-11-22 11:51:56
+801024584304787456,u'$AAPL Can Apple Find \u2018Next Big Thing\u2019? Who Knows? is One Answer from UBS https://t.co/I0vHsYutu5 via @barronsonline',False,0,0,2480,1.0,20,0,2,2016-11-22 11:28:37
