@@ -45,6 +45,7 @@ class gen_training_set(object):
         keys  = stock_df.columns
 
         dates_to_stock = {}
+        change_on_stock = {}
 
         #stock data
         for i in range(0,len(stock_df)):
@@ -58,6 +59,10 @@ class gen_training_set(object):
             opening = stock_df.get_value(i,keys[3])
             closing = stock_df.get_value(i,keys[6])
             dates_to_stock[date] = abs(opening-closing)
+            if closing > opening:
+                change_on_stock[date] = 1
+            else:
+                change_on_stock[date] = 0
 
         #Senitment scores and Tweets
         df = pd.read_csv(self.filename+"/"+self.filename+"_info.csv",low_memory=False)
@@ -94,6 +99,7 @@ class gen_training_set(object):
         df_2.insert(1,"Mod Score",0)
         df_2.insert(2,"Average Score",0)
         df_2.insert(3,"Stock Price",0)
+        df_2.insert(4,"Change",0)
 
         keys = dates_to_scores.keys()
         ctr = 0
@@ -113,7 +119,8 @@ class gen_training_set(object):
                 df_2.set_value(i,"Mod Score",vals[1])
                 df_2.set_value(i,"Average Score",vals[0])
                 df_2.set_value(i,"Stock Price",dates_to_stock_value)
-                print keys[i],vals[1],vals[0],dates_to_stock_value
+                df_2.set_value(i,"Change",change_on_stock[keys[i]])
+                print keys[i],vals[1],vals[0],dates_to_stock_value,change_on_stock[keys[i]]
                 ctr+=1
             except KeyError:
                 pass
@@ -122,7 +129,7 @@ class gen_training_set(object):
         df_2.to_csv(self.filename+"/"+self.filename+"_training_set.csv",sep=",")
 
 
-
-obj = gen_training_set("FB")
+#Repalce X with FB/TSLA/GOOG
+obj = gen_training_set(X)
 #obj.clean_data()
 obj.make_training_set()
