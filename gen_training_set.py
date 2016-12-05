@@ -130,6 +130,6 @@ class gen_training_set(object):
 
 
 #Repalce X with FB/TSLA/GOOG
-obj = gen_training_set(X)
+obj = gen_training_set("FB")
 #obj.clean_data()
 obj.make_training_set()
