@@ -1,7 +1,6 @@
 import tweepy
 import Tweet
 
-
 class CursorListener():
     def __init__(self, query, twitter_api, max_limit=10):
         self.stock_query = query
